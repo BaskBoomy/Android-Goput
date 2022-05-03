@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainivory"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bottomlogo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/makematchscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/box2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="항목"
+                    android:textColor="@color/maingreen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="항목 : 풋살/축구"
+                    android:inputType="text"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A6A5A5"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="매칭 날짜"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="82dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/nanumsquare_acb"
+                        android:gravity="center"
+                        android:textColor="@color/maingreen"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/setMatchDate"
+                        android:layout_width="42dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/maingreen"
+                        android:gravity="center"
+                        android:text="설정"
+                        android:textColor="@color/mainivory"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/matchDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:inputType="datetime"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@+id/setVoteDate"
+                        android:fontFamily="@font/nanumsquare_acb"
+                        android:gravity="center"
+                        android:text="투표 완료 날짜"
+                        android:textColor="@color/maingreen"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/setVoteDate"
+                        android:layout_width="42dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/maingreen"
+                        android:gravity="center"
+                        android:text="설정"
+                        android:textColor="@color/mainivory"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/voteDueDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:inputType="datetime"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nanumsquare_acr"
+                        android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="장소"
+                    android:textColor="@color/maingreen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="장소를 입력하세요."
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A6A5A5"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="주소"
+                    android:textColor="@color/maingreen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="주소를 입력하세요."
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A6A5A5"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/makematchnextBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/maingreen"
+        android:fontFamily="@font/nanumsquare_acb"
+        android:gravity="center"
+        android:text="다음"
+        android:textColor="@color/mainivory" />
+
+</LinearLayout>

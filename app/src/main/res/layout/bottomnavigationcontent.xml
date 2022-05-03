@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxtopradius"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        app:behavior_hideable="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/boxtopradiusblue"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+        <TextView
+                android:id="@+id/monthweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/nanumsquare_aceb"
+                android:gravity="center_vertical"
+                android:text="클럽 목록"
+                android:textColor="@color/mainivory"
+                android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/myClubBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/nanumsquare_aceb"
+                android:gravity="center_vertical"
+                android:text="MY"
+                android:textColor="@color/maingreen"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/myClubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center_vertical"
+                android:text="클럽생성하러가기"
+                android:textColor="@color/maingreen"
+                android:textSize="15sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="("
+                android:textColor="@color/maingreen"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/myClubMemberCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center_vertical"
+                android:text="-"
+                android:textColor="@color/maingreen"
+                android:textSize="15sp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center_vertical"
+                android:text="명)"
+                android:textColor="@color/maingreen"
+                android:textSize="15sp" />
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_arrowright_18px" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <ListView
+                android:id="@+id/myclublistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

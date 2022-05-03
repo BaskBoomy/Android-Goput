@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layoutDirection="ltr">
+
+    <item
+        android:id="@+id/viewallmember"
+        android:icon="@drawable/ic_people_24px"
+        android:title="MYPAGE"
+        android:contentDescription="HOME"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/mypage"
+        android:icon="@drawable/ic_person_24px"
+        android:title="MY"
+        android:contentDescription="HOME"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_24px"
+        android:title="HOME"
+        android:contentDescription="HOME"
+        app:showAsAction="always"/>
+
+<!--    <item-->
+<!--        android:id="@+id/more"-->
+<!--        android:title="내용"-->
+<!--        android:contentDescription="더쓰기바텀네비게이션"-->
+<!--        app:showAsAction="never"-->
+<!--        />-->
+</menu>
+

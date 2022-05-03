@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/box2"
+    android:orientation="vertical"
+    tools:context=".ShowAllMember">
+
+    <TextView
+        android:text="전체멤버"
+        android:textSize="20sp"
+        android:textColor="@color/mainivory"
+        android:fontFamily="@font/nanumsquare_acb"
+        android:gravity="center"
+        android:background="@drawable/boxtopradiusblue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.87"
+        android:gravity="center"
+        android:text="20명"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:textColor="@color/maingreen"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:fillViewport="true"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/allmemberlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/mainivory"
+            />
+    </ScrollView>
+    <!-- 닫기 버튼 -->
+        <Button
+            android:text="확인"
+            android:textSize="15sp"
+            android:textColor="@color/mainivory"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="@drawable/boxbottomradiusgreen"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:layout_height="53dp"
+            android:onClick="mOnClose"/>
+</LinearLayout>

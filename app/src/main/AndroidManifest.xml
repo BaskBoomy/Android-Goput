@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.goputapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 외장메모리에 저장하고, 서버에 업로드 할 것이기 때문에 WRITE_EXTERNAL_STORAGE 권한 추가 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 인터넷 사용 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+            android:name=".App"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainNoticeAcitivity"></activity>
+        <activity android:name=".MyPage_AccountSetting" />
+        <activity android:name=".MyPage_MatchList" />
+        <activity android:name=".Mypage_ClubSetting" />
+        <activity android:name=".MyPageActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".SearchClubActivity" />
+        <activity android:name=".MakeOrJoinActivity" />
+        <activity android:name=".RegistActivity2" />
+        <activity android:name=".RegistFinsihActivity" />
+        <activity android:name=".RegistActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginRegistActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChooseAcitivity" />
+        <activity
+                android:name=".BottomNavigation"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".ShowAllMember"
+                android:theme="@android:style/Theme.Dialog" />
+        <activity
+                android:name=".SplashActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".MakeMatch2Activity"
+                android:launchMode="singleTask"
+                android:windowSoftInputMode="adjustPan" />
+        <activity
+                android:name=".MakeMatchActivity"
+                android:windowSoftInputMode="adjustPan" />
+        <activity
+                android:name=".PopupMemberActivity"
+                android:theme="@android:style/Theme.Dialog" />
+        <activity
+                android:name=".PopupWelcomeActivity"
+                android:theme="@android:style/Theme.Dialog" />
+        <activity
+                android:name=".MatchInfoActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".member" />
+        <activity
+                android:name=".MakeClubActivity"
+                android:windowSoftInputMode="adjustPan" />
+        <activity
+                android:name=".InfoAcitivity"
+                android:launchMode="singleTop"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity
+                android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+                android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                        android:host="oauth"
+                        android:scheme="kakao1ffa67a910296b0ef943d0e6c3c88803" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name=".Notification.MyFirebaseIdService"
+                android:enabled="true"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+                android:name=".Notification.MyFirebaseMessaging"
+                android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

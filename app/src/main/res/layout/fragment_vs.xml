@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlaceholderFragment"
+    android:padding="30dp">
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:text="상대등록"
+        android:textSize="16sp"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:textColor="@color/mainivory"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@color/maingreen"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="주종목"
+                android:textColor="@color/maingreen"
+                android:fontFamily="@font/nanumsquare_acb"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="미정"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumsquare_acl"
+                android:textSize="16sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="연령대"
+                android:textColor="@color/maingreen"
+                android:fontFamily="@font/nanumsquare_acb"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="미정"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumsquare_acl"
+                android:textSize="16sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="능력"
+                android:textColor="@color/maingreen"
+                android:fontFamily="@font/nanumsquare_acb"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/nanumsquare_acl"
+                android:gravity="center"
+                android:text="미정"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

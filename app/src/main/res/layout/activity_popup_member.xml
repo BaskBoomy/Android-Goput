@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/box2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <!-- Notice -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 타이틀바 -->
+        <TextView
+            android:text="MEMBER"
+            android:textSize="20sp"
+            android:textColor="@color/mainivory"
+            android:fontFamily="@font/nanumsquare_acb"
+            android:gravity="center"
+            android:background="@drawable/boxtopradiusblue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <!-- //end 타이틀바 -->
+        <TextView
+            android:id="@+id/txtText"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:fillViewport="true"
+            android:layout_weight="1">
+            <ListView
+                android:id="@+id/memberlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/mainivory"
+                />
+
+        </ScrollView>
+    </LinearLayout>
+    <!-- Notice -->
+
+
+    <!-- 닫기/확인 버튼 -->
+        <Button
+    android:text="확인"
+    android:textSize="15sp"
+    android:textColor="@color/mainivory"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/boxbottomradiusgreen"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:onClick="mOnClose"/>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

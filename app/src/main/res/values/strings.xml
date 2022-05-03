@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoPut</string>
+    <string name="tab_text_1">투표</string>
+    <string name="tab_text_2">공지</string>
+    <string name="tab_text_3">상대</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

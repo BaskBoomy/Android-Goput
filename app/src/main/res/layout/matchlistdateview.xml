@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:gravity="center"
+    android:background="@color/mainivory"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progresscirclegreen" />
+
+    <TextView
+        android:id="@+id/matchfulldate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:gravity="center"
+        android:text="3월 26일 월 8시"
+        android:textColor="@color/maingreen"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="140dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:progress="40"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/matchfullcount"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:gravity="center"
+        android:text="4명"
+        android:textColor="@color/maingreen"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_margin="5px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrowright_18px" />
+</LinearLayout>

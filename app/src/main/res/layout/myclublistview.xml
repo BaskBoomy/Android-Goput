@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:gravity="center"
+    android:background="@color/mainivory"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+
+    <ImageView
+            android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progresscirclegreen" />
+
+    <TextView
+            android:id="@+id/joinedClubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="내클럽이름들어가는곳"
+            android:textColor="@color/maingreen"
+            android:textSize="15sp" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="("
+            android:textColor="@color/maingreen"
+            android:textSize="15sp" />
+    <TextView
+            android:id="@+id/clubMemberCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:gravity="center_vertical"
+            android:text="17"
+            android:textColor="@color/maingreen"
+            android:textSize="15sp" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:gravity="center_vertical"
+            android:text="명)"
+            android:textColor="@color/maingreen"
+            android:textSize="15sp" />
+    <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_arrowright_18px" />
+</LinearLayout>

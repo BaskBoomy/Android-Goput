@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/maingreen</item>
+        <item name="colorPrimaryDark">@color/maingreen</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.BottomAppBar.Colored" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="backgroundTint">@color/mainivory</item>
+        <item name="materialThemeOverlay">@color/mainivory</item>
+        <item name="colorPrimaryDark">@color/mainivory</item>
+    </style>
+
+    <style name="progressbar_color">
+        <item name="colorAccent">@color/maingreen</item>
+    </style>
+
+
+    <style name="customViewFontStyle" parent="@android:style/Widget.DeviceDefault">
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="DatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/maingreen</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/mainivory</item>
+        <item name="android:height">23dp</item>
+        <item name="fontFamily">@font/nanumsquare_acr</item>
+    </style>
+
+    <style parent="@android:style/Widget.Spinner" name="SpinnerwithNoArrow">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchClubActivity"
+    android:background="@color/mainivory"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goput" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="클럽 검색"
+        android:fontFamily="@font/nanumsquare_acb"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/maingreen"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+        <EditText
+            android:id="@+id/searchTxt"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:hint="클럽명을 입력해주세요."
+            android:fontFamily="@font/nanumsquare_acb"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/maingreen"
+            android:textColorHint="#959A9A"
+            android:background="@drawable/searchlayout"
+            android:singleLine="true"/>
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/circlegreenlayout"
+            android:src="@drawable/baseline_search_black_24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@color/mainivory"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center"
+                android:text="등급"
+                android:textColor="@color/maingreen"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="187dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@color/mainivory"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center"
+                android:text="클럽명"
+                android:textColor="@color/maingreen"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@color/mainivory"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center"
+                android:text="인원"
+                android:textColor="@color/maingreen"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/result_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

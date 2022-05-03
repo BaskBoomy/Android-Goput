@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainivory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/but_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_leftarrow"/>
+
+        <TextView
+            android:id="@+id/tv_month_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/maingreen"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <ImageButton
+            android:id="@+id/but_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_rightarrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:textColor="#D32F2F"
+            android:id="@+id/tv_day_of_week_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_day_of_week_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_day_of_week_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_day_of_week_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_day_of_week_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_day_of_week_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+        <TextView
+            android:textColor="#303F9F"
+            android:id="@+id/tv_day_of_week_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare_acb"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_weeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+</LinearLayout>

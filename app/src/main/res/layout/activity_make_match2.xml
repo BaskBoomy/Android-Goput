@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainivory"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goput" />
+    </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/makematchscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/box2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquare_acb"
+                        android:gravity="center"
+                        android:text="구장비용"
+                        android:textColor="@color/maingreen"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="구장비용을 입력하세요."
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A6A5A5"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/box2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="상대 클럽"
+                            android:layout_width="128dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="82dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="35dp"
+                            android:fontFamily="@font/nanumsquare_acb"
+                            android:gravity="center"
+                            android:textColor="@color/maingreen"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/srchClubBtn"
+                            android:layout_width="42dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="right"
+                            android:layout_marginEnd="40dp"
+                            android:background="@color/maingreen"
+                            android:gravity="center"
+                            android:text="검색"
+                            android:textColor="@color/mainivory"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/vsClubName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:inputType="datetime"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nanumsquare_acr"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/box2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquare_acb"
+                        android:gravity="center"
+                        android:text="최대인원"
+                        android:textColor="@color/maingreen"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/maxPeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="최대인원을 입력하세요."
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A6A5A5"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/box2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquare_acb"
+                        android:gravity="center"
+                        android:text="회식여부"
+                        android:textColor="@color/maingreen"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <Button
+                            android:id="@+id/btnYes"
+                            android:layout_width="50dp"
+                            android:layout_height="27dp"
+                            android:text="YES"
+                            android:textColor="@color/maingreen"
+                            android:background="@drawable/btnstyle1"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/nanumsquare_acb"/>
+                        <Button
+                            android:id="@+id/btnNo"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="50dp"
+                            android:layout_height="27dp"
+                            android:text="NO"
+                            android:textColor="@color/maingreen"
+                            android:background="@drawable/btnstyle1"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/nanumsquare_acb"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/makematchBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@color/maingreen"
+            android:fontFamily="@font/nanumsquare_acb"
+            android:gravity="center"
+            android:text="매치생성"
+            android:textColor="@color/mainivory" />
+    </LinearLayout>

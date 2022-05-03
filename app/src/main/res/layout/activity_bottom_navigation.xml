@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomNavigation"
+    >
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Screen content -->
+
+        <FrameLayout
+            android:id="@+id/scrim"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+<!--        <com.google.android.material.navigation.NavigationView-->
+
+<!--            android:id="@+id/navigationView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:menu="@menu/navigation_drawer"-->
+<!--            app:layout_behavior="@string/bottom_sheet_behavior"-->
+<!--            app:behavior_hideable="true"-->
+<!--            app:headerLayout="@layout/header_navigation_drawer"/>-->
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:layout_gravity="bottom"
+            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
+            app:navigationIcon="@drawable/baseline_menu_black_24dp" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <include layout="@layout/bottomnavigationcontent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

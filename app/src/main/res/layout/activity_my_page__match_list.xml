@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainivory"
+        android:orientation="vertical"
+        tools:context=".MyPageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/info_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar">
+
+        <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/leftarrow" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:text="매칭 목록"
+                android:textColor="@color/maingreen"
+                android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="승"
+                    android:textColor="@color/maingreen"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:gravity="center"
+                    android:text="3회"
+                    android:textColor="@color/maingreen"
+                    android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="패"
+                    android:textColor="@color/maingreen"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:gravity="center"
+                    android:text="3회"
+                    android:textColor="@color/maingreen"
+                    android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="무"
+                    android:textColor="@color/maingreen"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:gravity="center"
+                    android:text="3회"
+                    android:textColor="@color/maingreen"
+                    android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/maingreen">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:gravity="center"
+                    android:text="클럽이름1"
+                    android:textColor="@color/mainivory"
+                    android:textSize="18sp" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:gravity="center"
+                    android:text="VS"
+                    android:textColor="@color/mainivory"
+                    android:textSize="18sp"
+                    android:layout_marginTop="3dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:gravity="center"
+                    android:text="클럽이름2"
+                    android:textColor="@color/mainivory"
+                    android:textSize="18sp"
+                    android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:text="2021.02.31 목"
+                    android:gravity="left"
+                    android:textColor="@color/maingreen"
+                    android:textSize="16sp" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:text="반포종합운동장"
+                    android:gravity="left"
+                    android:textColor="@color/maingreen"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:text="6,500원"
+                    android:gravity="left"
+                    android:textColor="@color/maingreen"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:text="승"
+                    android:gravity="center"
+                    android:textColor="@color/maingreen"
+                    android:textSize="30sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

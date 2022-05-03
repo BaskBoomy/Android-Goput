@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+    <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:gravity="center"
+            android:text="[유니폼]"
+            android:textColor="@color/mainivory"
+            android:textSize="13sp" />
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/nanumsquare_acl"
+            android:gravity="center"
+            android:text="유니폼 변경사항입니다."
+            android:textColor="@color/mainivory"
+            android:textSize="13sp" />
+</LinearLayout>
