@@ -1,5 +1,29 @@
-# Goput 풋살 클럽 관리 어플
+# Goput : Managing Footsal Club Application
 
-![image](https://user-images.githubusercontent.com/57517612/166405276-75ba1bc3-dfe2-4789-8f6f-4cfd375eb6a6.png)
-![image](https://user-images.githubusercontent.com/57517612/166405279-c3e9c38f-f542-4bc0-9108-f4797b38f6bc.png)
-![image](https://user-images.githubusercontent.com/57517612/166405286-ed7d709b-11c1-499a-b7fb-d586ebb8cbed.png)
+- Login / Register
+
+![image-20220503134348416](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503134348416.png)
+
+- Main
+
+![image-20220503134848311](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503134848311.png)
+
+- Club List
+
+![image-20220503134952104](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503134952104.png)
+
+- Make Club / Join Club
+
+![image-20220503135207648](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503135207648.png)
+
+- Club Member / Mypage
+
+![image-20220503135353986](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503135353986.png)
+
+- Mypage
+
+![image-20220503135426295](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503135426295.png)
+
+- Match Info / Vote
+
+![image-20220503135458145](C:\Users\whdgu\AppData\Roaming\Typora\typora-user-images\image-20220503135458145.png)
